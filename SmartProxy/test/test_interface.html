@@ -1,0 +1,57 @@
+<head>
+<meta charset="UTF-8">
+</head>
+    <style type="text/css">
+        *{padding:0;margin: 0}
+        button,p, span{display: block;margin: 15px; padding-left: 5px; padding-right: 5px}
+    </style>
+
+<script>
+    var host = "http://localhost:18080/"
+
+    window.onload = function(){
+        document.getElementById("go_root").onclick=function(){
+            window.location.href="http://localhost:18080/"
+        }
+    }
+
+    function send(url, data){
+       var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function(){
+            var XMLHttpReq = xhr;
+            if (XMLHttpReq.readyState == 4) {
+                document.getElementById('txt').innerHTML = XMLHttpReq.responseText;
+            }
+        };
+        xhr.send(data); 
+    }
+
+    function request_camera_occlusion_service(){
+        send(host+"CameraOcclusionServiceRequest", "CameraOcclusionServiceRequest");
+    }
+
+    function request_register_service(){
+        send(host+"RegisterService", "RegisterServie");
+    }
+
+    function request_unregister_service(){
+        send(host+"UnRegisterService", "UnRegisterServie");
+    }
+    
+</script>
+
+<body>
+    <p>Response: </p>
+    <span id="txt"></span>
+
+    <button id="go_root">Root</button>
+    <button onclick="request_camera_occlusion_service()"> CameraOcclusionServiceRequest </button>
+    <button onclick="request_register_service()"> RegisterService </button>
+    <button onclick="request_unregister_service()"> UnRegisterService </button>
+</body>
+
+
+
+
