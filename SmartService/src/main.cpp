@@ -9,10 +9,6 @@ using namespace std;
 
 
 int main(int argc, char* argv[]) {
-	HttpClient http_client;
-	http_client.request("192.168.0.88", 18080, "/RegisterService", "Hello");
-	return 0;
-
 	try {
 		boost::asio::io_service myIoService;
 		short port = 8888;
