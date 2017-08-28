@@ -111,8 +111,8 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>..\..\3rdparty\cinatra\debug;..\..\3rdparty\openssl\lib;..\..\3rdparty\boost_1_61_0\lib;..\..\3rdparty\cpp_redis\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcinatra.lib;libcinatra_http.lib;libeay32.lib;ssleay32.lib;cpp_redis.lib;tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\boost_1_61_0\lib;..\..\3rdparty\cpp_redis\lib.debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cpp_redis.lib;tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
