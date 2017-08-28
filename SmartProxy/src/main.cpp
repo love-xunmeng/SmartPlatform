@@ -6,8 +6,6 @@ using namespace std;
 
 int main()
 {
-	return solve();
-
 	crow::SimpleApp app;
 
 	CROW_ROUTE(app, "/")(process_route_request);
