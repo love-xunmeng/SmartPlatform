@@ -6,7 +6,7 @@ include_directories(${PROJECT_ROOT}/3rdparty/crow/include
 			${PROJECT_ROOT}/3rdparty/cpp_redis/include
 			${PROJECT_ROOT}/3rdparty/rapidjson/include
 			${BOOST_INCLUDEDIR})
-link_directories(/home/michael/work/3rdparty/cpp_redis/lib)
+link_directories(${PROJECT_ROOT}/3rdparty-linux/cpp_redis/lib)
 
 find_package(Boost REQUIRED COMPONENTS
 		filesystem
