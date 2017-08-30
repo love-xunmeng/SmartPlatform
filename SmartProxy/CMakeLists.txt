@@ -1,5 +1,5 @@
 PROJECT(SmartProxy)
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 aux_source_directory(./src DIR_SRCS)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_ROOT}/bin)
 include_directories(${PROJECT_ROOT}/3rdparty/crow/include

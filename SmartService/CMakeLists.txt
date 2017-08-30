@@ -1,5 +1,5 @@
 PROJECT(SmartService)
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 add_compile_options(-std=c++14)
 aux_source_directory(./src DIR_SRCS)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_ROOT}/bin)
