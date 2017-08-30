@@ -4,7 +4,6 @@
 #include <vector>
 #include <boost/filesystem.hpp>
 #include <boost/regex.hpp>
-#include <direct.h>
 
 using namespace std;
 namespace fs = boost::filesystem;
