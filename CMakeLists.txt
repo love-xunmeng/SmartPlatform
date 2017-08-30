@@ -1,5 +1,5 @@
 project(SmartPlatform)
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 set(PROJECT_ROOT "${PROJECT_SOURCE_DIR}" CACHE INTERNAL "project root dir")
 set(BOOST_INCLUDEDIR "/home/michael/work/3rdparty/boost_1_64_0")
 set(BOOST_LIBRARYDIR "/home/michael/work/3rdparty/boost_1_64_0/stage/lib")
