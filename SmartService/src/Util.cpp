@@ -5,6 +5,9 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#ifdef linux
+#include <string.h>
+#endif
 using namespace std;
 
 
