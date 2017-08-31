@@ -288,3 +288,23 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+
+
+
+
+
+
+
+#for linux
+CMakeCache.txt
+CMakeFiles/
+Makefile
+SmartProxy/CMakeFiles/
+SmartProxy/Makefile
+SmartProxy/cmake_install.cmake
+SmartService/CMakeFiles/
+SmartService/Makefile
+SmartService/cmake_install.cmake
+bin/
+cmake_install.cmake
