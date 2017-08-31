@@ -44,8 +44,12 @@ void Server::start() {
 
 void Server::stop() {
 	asio_thread_.join();
-	for each(boost::shared_ptr<MyThread2> thread in algorithm_threads_) {
-		thread->stop();
+	//for each(boost::shared_ptr<MyThread2> thread in algorithm_threads_) {
+	//	thread->stop();
+	//}
+	std::vector<boost::shared_ptr<MyThread2>>::iterator it = algorithm_threads_.begin();
+	for (it = algorithm_threads_.begin(); it != algorithm_threads_.end(); it++) {
+		(*it)->stop();
 	}
 }
 
