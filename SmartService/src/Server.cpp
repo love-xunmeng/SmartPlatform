@@ -85,7 +85,9 @@ void Server::start_algorithm_threads() {
 }
 
 void Server::register_singal_handlers() {
+#ifdef _WIN32
 	SetConsoleCtrlHandler((PHANDLER_ROUTINE)CtrlHandler, TRUE);
+#endif
 }
 
 void Server::register_service_to_proxy() {
