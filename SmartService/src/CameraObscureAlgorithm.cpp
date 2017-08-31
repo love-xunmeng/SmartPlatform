@@ -2,6 +2,9 @@
 #include "CameraObscured.h"
 #include "IAlgorithm.h"
 #include "Util.h"
+#ifdef linux
+#include "FreeImage.h"
+#endif // linux
 #include "ImageStone.h"
 #include "rapidjson/document.h"     
 #include "rapidjson/prettywriter.h" 
