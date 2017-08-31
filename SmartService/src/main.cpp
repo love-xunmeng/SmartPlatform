@@ -2,6 +2,7 @@
 #include "DataItem.h"
 #include "MyThread2.h"
 #include "HttpClient.h"
+#include "opencv2/opencv.hpp"
 #include "boost/asio.hpp"
 #include <iostream>
 using namespace std;
