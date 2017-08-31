@@ -6,11 +6,10 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_ROOT}/bin)
 include_directories(
 			${BOOST_INCLUDEDIR}
 			${OPENCV_INCLUDE_DIR}
-			${PROJECT_ROOT}/3rdparty/
-			${PROJECT_ROOT}/3rdparty/image_stone
-			${PROJECT_ROOT}/3rdparty/rapidjson/include
-			${PROJECT_ROOT}/3rdparty/cpp_redis/include
-			${PROJECT_ROOT}/3rdparty/FreeImage/build/usr/include)
+			${PROJECT_ROOT}/3rdparty-linux/image_stone
+			${PROJECT_ROOT}/3rdparty-linux/rapidjson/include
+			${PROJECT_ROOT}/3rdparty-linux/cpp_redis/include
+			${PROJECT_ROOT}/3rdparty-linux/FreeImage/build/usr/include)
 link_directories(${OPENCV_LIBRARY_DIR}
 			/home/michael/work/3rdparty/cpp_redis/lib
 			${PROJECT_ROOT}/3rdparty/FreeImage/build/usr/lib)
