@@ -16,7 +16,9 @@
 using boost::asio::ip::tcp;
 using namespace std;
 
+#ifdef linux
 BOOL WINAPI CtrlHandler(DWORD dwCtrlType);
+#endif
 
 Server::Server(boost::asio::io_service& ioservice, tcp::endpoint& endpoint)
 	: m_ioservice(ioservice)
@@ -86,6 +88,7 @@ void Server::register_service_to_proxy() {
 
 }
 
+#ifdef linux
 BOOL WINAPI CtrlHandler(DWORD dwCtrlType) {
 	switch (dwCtrlType) {
 	case CTRL_C_EVENT:
@@ -114,3 +117,4 @@ BOOL WINAPI CtrlHandler(DWORD dwCtrlType) {
 	}
 	return TRUE;
 }
+#endif
