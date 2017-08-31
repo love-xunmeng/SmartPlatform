@@ -12,7 +12,7 @@ include_directories(
 			${PROJECT_ROOT}/3rdparty-linux/FreeImage/build/usr/include)
 link_directories(${OPENCV_LIBRARY_DIR}
 			${PROJECT_ROOT}/3rdparty-linux/cpp_redis/lib
-			${PROJECT_ROOT}/3rdparty/FreeImage/build/usr/lib)
+			${PROJECT_ROOT}/3rdparty-linux/FreeImage/build/usr/lib)
 find_package(Boost REQUIRED COMPONENTS
 		filesystem
 		regex
