@@ -1,4 +1,4 @@
-project(SmartPlatform)
+project(SmartPlatform) 
 cmake_minimum_required(VERSION 3.8)
 set(PROJECT_ROOT "${PROJECT_SOURCE_DIR}" CACHE INTERNAL "project root dir")
 set(BOOST_INCLUDEDIR "${PROJECT_ROOT}/3rdparty-linux/boost/include")
