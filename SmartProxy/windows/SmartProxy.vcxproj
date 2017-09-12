@@ -156,12 +156,16 @@
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\RegisterUnRegisterServiceHandler.cpp" />
     <ClCompile Include="..\src\RequestHandler.cpp" />
+    <ClCompile Include="..\src\ServiceUpdater.cpp" />
     <ClCompile Include="..\src\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CameraOcclusionServiceRequestHandler.h" />
+    <ClInclude Include="..\src\MQuque.h" />
     <ClInclude Include="..\src\RegisterUnRegisterServiceHandler.h" />
     <ClInclude Include="..\src\RequestHandler.h" />
+    <ClInclude Include="..\src\ServiceItem.h" />
+    <ClInclude Include="..\src\ServiceUpdater.h" />
     <ClInclude Include="..\src\Util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
