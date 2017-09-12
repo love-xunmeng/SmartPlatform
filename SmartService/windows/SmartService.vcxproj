@@ -18,6 +18,32 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\CameraObscureAlgorithm.cpp" />
+    <ClCompile Include="..\src\CameraObscured.cpp" />
+    <ClCompile Include="..\src\Config.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Server.cpp" />
+    <ClCompile Include="..\src\ServiceItem.cpp" />
+    <ClCompile Include="..\src\ServiceRegisterUnregister.cpp" />
+    <ClCompile Include="..\src\Session.cpp" />
+    <ClCompile Include="..\src\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\CameraObscureAlgorithm.h" />
+    <ClInclude Include="..\src\CameraObscured.h" />
+    <ClInclude Include="..\src\Config.h" />
+    <ClInclude Include="..\src\DataItem.h" />
+    <ClInclude Include="..\src\IAlgorithm.h" />
+    <ClInclude Include="..\src\mqueue.h" />
+    <ClInclude Include="..\src\MyThread.h" />
+    <ClInclude Include="..\src\QueueManager.h" />
+    <ClInclude Include="..\src\Server.h" />
+    <ClInclude Include="..\src\ServiceItem.h" />
+    <ClInclude Include="..\src\ServiceRegisterUnregister.h" />
+    <ClInclude Include="..\src\Session.h" />
+    <ClInclude Include="..\src\Util.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E4893D86-8AD1-4B48-AE38-7575563F0E0B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -104,13 +130,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\..\3rdparty\boost_1_61_0;..\..\3rdparty\crow;..\..\3rdparty\image_stone;..\..\3rdparty\opencv310\include;..\..\3rdparty\rapidjson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\3rdparty\boost_1_61_0;..\..\3rdparty\crow;..\..\3rdparty\image_stone;..\..\3rdparty\opencv310\include;..\..\3rdparty\rapidjson\include;..\..\3rdparty\cpp_redis\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\3rdparty\boost_1_61_0\lib.debug;..\..\3rdparty\opencv310\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world310d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\3rdparty\boost_1_61_0\lib.debug;..\..\3rdparty\opencv310\lib;..\..\3rdparty\cpp_redis\lib.debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world310d.lib;cpp_redis.lib;tacopie.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,31 +175,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\src\Algorithm.h" />
-    <ClInclude Include="..\src\AlgorithmThread.h" />
-    <ClInclude Include="..\src\CameraObscureAlgorithm.h" />
-    <ClInclude Include="..\src\CameraObscured.h" />
-    <ClInclude Include="..\src\DataItem.h" />
-    <ClInclude Include="..\src\HttpClient.h" />
-    <ClInclude Include="..\src\IAlgorithm.h" />
-    <ClInclude Include="..\src\mqueue.h" />
-    <ClInclude Include="..\src\MyThread2.h" />
-    <ClInclude Include="..\src\QueueManager.h" />
-    <ClInclude Include="..\src\Server.h" />
-    <ClInclude Include="..\src\Session.h" />
-    <ClInclude Include="..\src\Util.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\AlgorithmThread.cpp" />
-    <ClCompile Include="..\src\CameraObscureAlgorithm.cpp" />
-    <ClCompile Include="..\src\CameraObscured.cpp" />
-    <ClCompile Include="..\src\HttpClient.cpp" />
-    <ClCompile Include="..\src\main.cpp" />
-    <ClCompile Include="..\src\Server.cpp" />
-    <ClCompile Include="..\src\Session.cpp" />
-    <ClCompile Include="..\src\Util.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

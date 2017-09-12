@@ -49,7 +49,6 @@ bool  CameraAbnormalDetector::Check_Camera_Obscured(Mat mImgSrc, int nThreshold)
 	Scalar sSumOfGrad = sum(mGrad);
 	double dSumOfGrad = sSumOfGrad.val[0];
 	double dAvarageOfGrad = dSumOfGrad / (nWidth * nHight);
-	std::cout << "dAvarageOfGrad=" << dAvarageOfGrad << std::endl;
 	if (static_cast<int>(dAvarageOfGrad) < nThreshold)
 	{
 		bCameraObscured = true;

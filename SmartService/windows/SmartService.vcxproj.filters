@@ -15,16 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\Algorithm.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\AlgorithmThread.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClCompile Include="..\src\CameraObscureAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CameraObscured.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Config.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Server.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ServiceItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ServiceRegisterUnregister.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Session.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\src\CameraObscureAlgorithm.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CameraObscured.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Config.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\DataItem.h">
@@ -36,7 +62,7 @@
     <ClInclude Include="..\src\mqueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\MyThread2.h">
+    <ClInclude Include="..\src\MyThread.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\QueueManager.h">
@@ -45,40 +71,17 @@
     <ClInclude Include="..\src\Server.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\ServiceItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ServiceRegisterUnregister.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\Session.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Util.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\HttpClient.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\AlgorithmThread.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\CameraObscureAlgorithm.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\CameraObscured.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Server.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Session.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Util.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\HttpClient.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

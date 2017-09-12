@@ -5,16 +5,18 @@
 #include <boost/asio.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/thread/thread.hpp>
+#include <boost/utility.hpp>
 #include <memory>
 #include <vector>
 
-class MyThread2;
+class Config;
+class MyThread;
 class QueueManager;
 
-class Server
+class Server : boost::noncopyable
 {
 public:
-	Server(boost::asio::io_service& ioservice, tcp::endpoint& endpoint);
+	Server(boost::asio::io_service& ioservice, tcp::endpoint& endpoint, boost::shared_ptr<Config> config);
 	~Server();
 
 	void start();
@@ -26,15 +28,16 @@ private:
 	void handle_accept(const boost::system::error_code& error, session_ptr& session);
 	void start_listerning();
 	void start_algorithm_threads();
-	void register_singal_handlers();
-	void register_service_to_proxy();
+	void register_service();
+	void unregister_service();
 	
 private:
 	boost::asio::io_service& m_ioservice;
 	tcp::acceptor acceptor_;
 	boost::thread asio_thread_;
 	boost::shared_ptr<QueueManager> queue_manager_;
-	std::vector<boost::shared_ptr<MyThread2>> algorithm_threads_;
+	std::vector<boost::shared_ptr<MyThread>> algorithm_threads_;
+	boost::shared_ptr<Config> config_;
 };
 
 #endif //server_h_

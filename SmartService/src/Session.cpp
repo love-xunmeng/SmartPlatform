@@ -54,11 +54,9 @@ void Session::start() {
 }
 
 void Session::handle_read_data_length(const boost::system::error_code &error) {
-	cout << "handle_read_data_length" << endl;
 	if (!error)
 	{
 		data_size_ = Util::bytes_to_int((unsigned char*)data_);
-		cout << "data_length=" << data_size_ << endl;
 		boost::asio::async_read(socket_,
 			boost::asio::buffer(data_, data_size_),
 			boost::bind(&Session::handle_read_data, shared_from_this(), boost::asio::placeholders::error));
@@ -69,10 +67,8 @@ void Session::handle_read_data_length(const boost::system::error_code &error) {
 }
 
 void Session::handle_read_data(const boost::system::error_code &error) {
-	cout << "handle_read_data" << endl;
 	if (!error)
 	{
-		//cout << "data=" << data_ << endl;
 		boost::shared_ptr<DataItem> camera_occlusion_data(new DataItem());
 		camera_occlusion_data->json_data_ = string(data_, data_size_);
 		camera_occlusion_data->session_ = shared_from_this();
@@ -117,7 +113,7 @@ void Session::handle_write_data(const boost::system::error_code &error) {
 
 void Session::process_error_code(const boost::system::error_code &error) {
 	if (error == boost::asio::error::eof) {
-		cout << "Remote client closed." << endl;
+		//cout << "Remote client closed." << endl;
 	}
 	else if (error == boost::asio::error::bad_descriptor) {
 		cerr << "boost::asio::error::bad_descriptor" << endl;
