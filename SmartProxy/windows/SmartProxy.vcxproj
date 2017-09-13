@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\CameraOcclusionServiceRequestHandler.cpp" />
+    <ClCompile Include="..\src\HusbandWifeLooksHandler.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\RegisterUnRegisterServiceHandler.cpp" />
     <ClCompile Include="..\src\RequestHandler.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CameraOcclusionServiceRequestHandler.h" />
+    <ClInclude Include="..\src\HusbandWifeLooksHandler.h" />
     <ClInclude Include="..\src\MQuque.h" />
     <ClInclude Include="..\src\RegisterUnRegisterServiceHandler.h" />
     <ClInclude Include="..\src\RequestHandler.h" />

@@ -33,6 +33,9 @@
     <ClCompile Include="..\src\ServiceUpdater.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\HusbandWifeLooksHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\Util.h">
@@ -54,6 +57,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\src\ServiceUpdater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HusbandWifeLooksHandler.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

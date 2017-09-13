@@ -28,7 +28,7 @@ int main()
 	crow::SimpleApp app;
 	app.route_dynamic("/").methods(crow::HTTPMethod::Post)([] {return process_route_request();});
 	app.route_dynamic("/CameraOcclusionServiceRequest").methods(crow::HTTPMethod::Post)([](const crow::request& req) {return process_camera_occlusion_service_request(req); });
-
+	app.route_dynamic("/HusbandWithLooksRequest").methods(crow::HTTPMethod::Post)([](const crow::request& req) {return husband_wife_looks_request(req); });
 	
 	//CROW_ROUTE(app, "/")(process_route_request);
 	///CROW_ROUTE(app, "/CameraOcclusionServiceRequest").methods("POST"_method)(process_camera_occlusion_service_request);

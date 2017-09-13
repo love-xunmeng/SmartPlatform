@@ -292,7 +292,9 @@ __pycache__/
 
 
 
-
+#for windows
+3rdparty\caffe.binding\lib.debug
+3rdparty\caffe.binding\lib.release
 
 
 

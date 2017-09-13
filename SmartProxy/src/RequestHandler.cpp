@@ -24,6 +24,10 @@ crow::response process_camera_occlusion_service_request(const crow::request& req
 	return resp;
 }
 
+crow::response husband_wife_looks_request(const crow::request& req) {
+	return crow::response("nothing");
+}
+
 //crow::response process_register_service_request(const crow::request& req) {
 //	RegisterUnRegisterServiceHandler handler;
 //	std::string body = req.body;
